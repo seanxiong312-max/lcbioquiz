@@ -1,0 +1,1362 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.3">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Leaving Cert Biology Quiz - Higher Level&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>* {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-sizing: border-box;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>:root {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--primary-green: #169b62;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--secondary-green: #0d7a4a;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--light-green: #e1f5e9;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--dark-green: #0a5c36;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--accent-orange: #ff7b00;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--text-dark: #333;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--text-light: #666;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--bg-light: #f8f9fa;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--white: #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--border: #ddd;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: var(--bg-light);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--text-dark);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.6;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.container {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 1200px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0 auto;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Header Styles */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>header {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: linear-gradient(135deg, var(--primary-green), var(--dark-green));</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 2rem 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 2rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.logo {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.logo i {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 2.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>h1 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 2.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 0.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.tagline {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.2rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>opacity: 0.9;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 800px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0 auto;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Main Layout */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.main-content {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>grid-template-columns: 1fr 2fr;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>@media (max-width: 900px) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>.main-content {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>grid-template-columns: 1fr;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Topic Selection Panel */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.selection-panel {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: var(--white);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 25px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: fit-content;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: sticky;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>top: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.panel-title {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--primary-green);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding-bottom: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-bottom: 2px solid var(--light-green);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.panel-title i {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--accent-orange);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.question-count {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 25px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.question-count label {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--text-dark);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.slider-container {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.slider-value {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: var(--primary-green);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 50px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 50px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 50%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.2rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.slider {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>flex: 1;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>-webkit-appearance: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 4px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: var(--light-green);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>outline: none;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.slider::-webkit-slider-thumb {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>-webkit-appearance: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 22px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 22px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 50%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: var(--primary-green);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 2px solid white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 2px 5px rgba(0,0,0,0.2);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.topics-container {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 25px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.topics-list {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>grid-template-columns: 1fr;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-height: 400px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>overflow-y: auto;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding-right: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.topic-item {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 12px 15px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: var(--bg-light);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: all 0.3s ease;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 2px solid transparent;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.topic-item:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: var(--light-green);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transform: translateY(-2px);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.topic-item.selected {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: var(--light-green);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-color: var(--primary-green);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 4px 8px rgba(22, 155, 98, 0.15);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.topic-checkbox {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-right: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>accent-color: var(--primary-green);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.topic-name {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 500;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>flex: 1;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.question-count-badge {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: var(--primary-green);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 3px 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 0.85rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.select-all-container {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: space-between;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding-top: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-top: 1px solid var(--border);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.btn {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 14px 28px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: all 0.3s ease;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: inline-flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.btn-primary {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: var(--primary-green);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.btn-primary:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: var(--secondary-green);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transform: translateY(-3px);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 6px 12px rgba(22, 155, 98, 0.3);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.btn-secondary {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: transparent;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--primary-green);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 2px solid var(--primary-green);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.btn-secondary:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: var(--light-green);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Quiz Panel */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.quiz-panel {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: var(--white);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>min-height: 600px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.quiz-header {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: space-between;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-bottom: 2px solid var(--light-green);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.quiz-title {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.8rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--primary-green);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.quiz-stats {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.stat {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: var(--light-green);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 8px 16px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--dark-green);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Quiz Content */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.quiz-content {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 40px 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.welcome-screen {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 700px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.welcome-icon {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 5rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--primary-green);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.welcome-title {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 2.2rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--primary-green);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.welcome-text {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.2rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--text-light);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 600px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.features {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>grid-template-columns: repeat(3, 1fr);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 40px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.feature {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: var(--light-green);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.feature i {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 2rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--primary-green);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.feature h3 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--dark-green);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Question Screen */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.question-screen {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: none;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.question-number {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--primary-green);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.question-text {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.4rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.5;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: var(--light-green);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-left: 5px solid var(--primary-green);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.options-container {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>grid-template-columns: 1fr;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 40px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.option {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 18px 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: var(--bg-light);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: all 0.2s ease;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: left;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 2px solid transparent;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.option:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: var(--light-green);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.option.selected {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: var(--light-green);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-color: var(--primary-green);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.option-letter {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: inline-flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 36px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 36px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: var(--primary-green);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 50%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-right: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>flex-shrink: 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.navigation-buttons {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: space-between;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Results Screen */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.results-screen {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: none;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.results-header {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.score-circle {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 180px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 180px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 50%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: conic-gradient(var(--primary-green) 0% 0%, var(--light-green) 0% 100%);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0 auto 30px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.score-inner {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 140px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 140px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 50%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.score-percent {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 2.5rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--primary-green);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.score-text {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--text-light);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.results-details {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: grid;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>grid-template-columns: repeat(3, 1fr);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 40px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.result-stat {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: var(--light-green);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.result-stat .value {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 2rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 700;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--primary-green);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.result-stat .label {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--text-light);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 0.9rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.results-breakdown {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: left;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.breakdown-title {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.3rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--primary-green);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding-bottom: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-bottom: 2px solid var(--light-green);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.breakdown-item {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-bottom: 1px solid var(--border);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: space-between;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.breakdown-item:last-child {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-bottom: none;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.breakdown-question {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>flex: 1;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-right: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.breakdown-status {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 5px 15px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-size: 0.9rem;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.correct {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #e1f5e9;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--dark-green);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.incorrect {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #ffeaea;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #d32f2f;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Footer */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>footer {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 50px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 30px 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: var(--text-light);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-top: 1px solid var(--border);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.footer-info {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>flex-wrap: wrap;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.footer-item {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>gap: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Responsive adjustments */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>@media (max-width: 768px) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>.features, .results-details {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>grid-template-columns: 1fr;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>.quiz-stats {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>gap: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>h1 {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>font-size: 2rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>.welcome-title {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>font-size: 1.8rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Header --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;header&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="logo"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;i class="fas fa-microscope"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h1&gt;Leaving Cert Biology Quiz&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="tagline"&gt;Higher Level | Past Paper Questions | Topic-Based Practice&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Main Content --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="main-content"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Topic Selection Panel --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="selection-panel"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="panel-title"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;i class="fas fa-sliders-h"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>Quiz Settings</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="question-count"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;label for="questionSlider"&gt;Number of Questions: &lt;span id="questionCount"&gt;10&lt;/span&gt;&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="slider-container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="slider-value" id="sliderValue"&gt;10&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;input type="range" min="5" max="30" value="10" class="slider" id="questionSlider"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="topics-container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="panel-title" style="font-size: 1.3rem; margin-bottom: 15px;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;i class="fas fa-book-open"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>Select Topics</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                    </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="topics-list" id="topicsList"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;!-- Topics will be populated by JavaScript --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                    </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="select-all-container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;button class="btn btn-secondary" id="selectAllBtn"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;i class="fas fa-check-square"&gt;&lt;/i&gt; Select All</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;button class="btn btn-secondary" id="clearAllBtn"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;i class="fas fa-times-circle"&gt;&lt;/i&gt; Clear All</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button class="btn btn-primary" id="startQuizBtn"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;i class="fas fa-play-circle"&gt;&lt;/i&gt; Start Quiz</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Quiz Panel --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="quiz-panel"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="quiz-header"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="quiz-title" id="quizTitle"&gt;Biology Quiz&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="quiz-stats"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="stat" id="timer"&gt;Time: 00:00&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="stat" id="scoreDisplay"&gt;Score: 0/0&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="quiz-content"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Welcome Screen --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="welcome-screen" id="welcomeScreen"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="welcome-icon"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;i class="fas fa-seedling"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h2 class="welcome-title"&gt;Leaving Cert Biology Higher Level Quiz&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="welcome-text"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>Test your knowledge with past paper questions from the Irish Leaving Certificate Biology Higher Level exam.<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                            </span>Select your preferred topics and number of questions to begin.</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/p&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                        </span></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="features"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="feature"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;i class="fas fa-clipboard-list"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;h3&gt;Past Paper Questions&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;p&gt;Authentic questions from previous exams&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="feature"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;i class="fas fa-filter"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;h3&gt;Topic Selection&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;p&gt;Focus on specific areas of the syllabus&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="feature"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;i class="fas fa-chart-line"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;h3&gt;Track Progress&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;p&gt;Detailed results and performance analysis&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                    </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Question Screen --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="question-screen" id="questionScreen"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="question-number"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;i class="fas fa-question-circle"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>Question &lt;span id="currentQuestionNum"&gt;1&lt;/span&gt; of &lt;span id="totalQuestions"&gt;10&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span style="margin-left: auto; font-size: 0.9rem;" id="questionTopic"&gt;Cell Structure &amp; Function&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                        </span></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="question-text" id="questionText"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>Which of the following is the primary function of the mitochondria in a eukaryotic cell?</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                        </span></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="options-container" id="optionsContainer"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;!-- Options will be populated by JavaScript --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                        </span></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="navigation-buttons"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;button class="btn btn-secondary" id="prevBtn"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;i class="fas fa-arrow-left"&gt;&lt;/i&gt; Previous</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;button class="btn btn-primary" id="nextBtn"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>Next &lt;i class="fas fa-arrow-right"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;button class="btn btn-primary" id="submitBtn" style="display: none;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;i class="fas fa-check-circle"&gt;&lt;/i&gt; Submit Quiz</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                    </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Results Screen --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="results-screen" id="resultsScreen"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="results-header"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;h2 class="welcome-title"&gt;Quiz Results&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p class="welcome-text"&gt;Here's how you performed on the quiz&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                        </span></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="score-circle" id="scoreCircle"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="score-inner"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="score-percent" id="scorePercent"&gt;0%&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="score-text"&gt;Correct&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                        </span></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="results-details"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="result-stat"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="value" id="correctAnswers"&gt;0&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="label"&gt;Correct Answers&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="result-stat"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="value" id="totalQuizQuestions"&gt;0&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="label"&gt;Total Questions&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="result-stat"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="value" id="timeTaken"&gt;0:00&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="label"&gt;Time Taken&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                        </span></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="results-breakdown"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;h3 class="breakdown-title"&gt;Question Breakdown&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div id="breakdownList"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;!-- Results breakdown will be populated by JavaScript --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                        </span></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div style="margin-top: 30px; display: flex; gap: 15px; justify-content: center;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;button class="btn btn-primary" id="restartBtn"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;i class="fas fa-redo"&gt;&lt;/i&gt; Try Another Quiz</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;button class="btn btn-secondary" id="reviewBtn"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;i class="fas fa-chart-bar"&gt;&lt;/i&gt; Review Answers</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Footer --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;footer&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="footer-info"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="footer-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;i class="fas fa-calendar-alt"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span&gt;Based on 2015-2023 Past Papers&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="footer-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;i class="fas fa-graduation-cap"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span&gt;Higher Level Syllabus&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="footer-item"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;i class="fas fa-question-circle"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span&gt;300+ Questions Database&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;© 2023 Leaving Cert Biology Quiz | Created for Irish Leaving Certificate Students&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Biology topics based on Leaving Cert syllabus</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const biologyTopics = [</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ id: 1, name: "Cell Structure &amp; Function", count: 25, selected: true },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ id: 2, name: "Enzymes &amp; Metabolism", count: 22, selected: true },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ id: 3, name: "Photosynthesis", count: 18, selected: false },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ id: 4, name: "Respiration", count: 20, selected: false },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ id: 5, name: "DNA &amp; Protein Synthesis", count: 28, selected: false },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ id: 6, name: "Genetics &amp; Inheritance", count: 32, selected: false },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ id: 7, name: "Evolution &amp; Natural Selection", count: 15, selected: false },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ id: 8, name: "Ecology", count: 24, selected: false },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ id: 9, name: "Plant Biology", count: 21, selected: false },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ id: 10, name: "Human Physiology", count: 35, selected: false },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ id: 11, name: "The Immune System", count: 16, selected: false },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ id: 12, name: "The Nervous System", count: 19, selected: false },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ id: 13, name: "Homeostasis", count: 14, selected: false },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ id: 14, name: "Microbiology", count: 12, selected: false },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ id: 15, name: "Biotechnology", count: 10, selected: false }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>];</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Sample questions database (in a real app, this would be much larger)</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const questionsDatabase = [</p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Cell Structure &amp; Function</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>id: 1,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Cell Structure &amp; Function",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>text: "Which of the following is the primary function of the mitochondria in a eukaryotic cell?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["Protein synthesis", "Photosynthesis", "Cellular respiration", "DNA replication"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 2,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>year: "2022",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>difficulty: "Medium"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>id: 2,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Cell Structure &amp; Function",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>text: "What is the main component of the cell membrane's structure?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["Phospholipid bilayer", "Cellulose", "Chitin", "Peptidoglycan"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 0,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>year: "2021",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>difficulty: "Easy"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>id: 3,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Enzymes &amp; Metabolism",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>text: "Which factor does NOT affect enzyme activity?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["pH level", "Temperature", "Enzyme concentration", "Atmospheric pressure"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 3,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>year: "2020",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>difficulty: "Medium"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>id: 4,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Photosynthesis",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>text: "In which part of the chloroplast does the light-dependent reaction occur?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["Stroma", "Thylakoid membrane", "Inner membrane", "Outer membrane"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 1,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>year: "2019",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>difficulty: "Hard"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>id: 5,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Respiration",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>text: "How many ATP molecules are produced per glucose molecule in aerobic respiration?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["2", "18", "36", "42"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 2,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>year: "2022",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>difficulty: "Hard"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>id: 6,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "DNA &amp; Protein Synthesis",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>text: "Which of the following is responsible for carrying amino acids to the ribosome during translation?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["mRNA", "tRNA", "rRNA", "DNA polymerase"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 1,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>year: "2021",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>difficulty: "Medium"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>id: 7,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Genetics &amp; Inheritance",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>text: "In Mendelian genetics, what is the phenotypic ratio of a heterozygous cross (Rr x Rr) for a single gene with complete dominance?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["1:1", "3:1", "1:2:1", "9:3:3:1"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 1,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>year: "2020",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>difficulty: "Easy"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>id: 8,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Evolution &amp; Natural Selection",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>text: "Which of the following is NOT a type of evidence for evolution?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["Fossil records", "Comparative anatomy", "Biblical accounts", "Molecular biology"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 2,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>year: "2019",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>difficulty: "Easy"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>id: 9,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Ecology",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>text: "What is the term for the maximum population size that an environment can sustain?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["Biotic potential", "Carrying capacity", "Limiting factor", "Ecological niche"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 1,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>year: "2022",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>difficulty: "Medium"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>id: 10,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topic: "Human Physiology",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>text: "Which hormone is responsible for regulating blood glucose levels by promoting glycogen breakdown?",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options: ["Insulin", "Glucagon", "Estrogen", "Adrenaline"],</p>
+<p class="p1"><span class="Apple-converted-space">                </span>correct: 1,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>year: "2021",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>difficulty: "Medium"</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>];</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// DOM Elements</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const topicsList = document.getElementById('topicsList');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const questionSlider = document.getElementById('questionSlider');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const questionCount = document.getElementById('questionCount');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const sliderValue = document.getElementById('sliderValue');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const selectAllBtn = document.getElementById('selectAllBtn');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const clearAllBtn = document.getElementById('clearAllBtn');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const startQuizBtn = document.getElementById('startQuizBtn');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const welcomeScreen = document.getElementById('welcomeScreen');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const questionScreen = document.getElementById('questionScreen');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const resultsScreen = document.getElementById('resultsScreen');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const currentQuestionNum = document.getElementById('currentQuestionNum');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const totalQuestions = document.getElementById('totalQuestions');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const questionText = document.getElementById('questionText');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const optionsContainer = document.getElementById('optionsContainer');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const prevBtn = document.getElementById('prevBtn');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const nextBtn = document.getElementById('nextBtn');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const submitBtn = document.getElementById('submitBtn');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const questionTopic = document.getElementById('questionTopic');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const timerElement = document.getElementById('timer');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const scoreDisplay = document.getElementById('scoreDisplay');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const scorePercent = document.getElementById('scorePercent');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const correctAnswers = document.getElementById('correctAnswers');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const totalQuizQuestions = document.getElementById('totalQuizQuestions');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const timeTaken = document.getElementById('timeTaken');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const breakdownList = document.getElementById('breakdownList');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const restartBtn = document.getElementById('restartBtn');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const reviewBtn = document.getElementById('reviewBtn');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const scoreCircle = document.getElementById('scoreCircle');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Quiz State Variables</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let selectedTopics = [];</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let numberOfQuestions = 10;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let currentQuestionIndex = 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let userAnswers = [];</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let quizQuestions = [];</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let quizStarted = false;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let startTime;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let timerInterval;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let timeElapsed = 0;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Initialize the topics list</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function initializeTopics() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>topicsList.innerHTML = '';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>biologyTopics.forEach(topic =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const topicElement = document.createElement('div');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topicElement.className = `topic-item ${topic.selected ? 'selected' : ''}`;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>topicElement.innerHTML = `</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="checkbox" class="topic-checkbox" id="topic-${topic.id}" ${topic.selected ? 'checked' : ''}&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="topic-name"&gt;${topic.name}&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="question-count-badge"&gt;${topic.count} Qs&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>`;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>topicElement.addEventListener('click', (e) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>if (e.target.type !== 'checkbox') {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>const checkbox = topicElement.querySelector('.topic-checkbox');</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>checkbox.checked = !checkbox.checked;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>topic.selected = checkbox.checked;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>topicElement.classList.toggle('selected', checkbox.checked);</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>updateSelectedTopics();</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>});</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>const checkbox = topicElement.querySelector('.topic-checkbox');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>checkbox.addEventListener('change', (e) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>topic.selected = e.target.checked;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>topicElement.classList.toggle('selected', e.target.checked);</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>updateSelectedTopics();</p>
+<p class="p1"><span class="Apple-converted-space">                </span>});</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>topicsList.appendChild(topicElement);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>updateSelectedTopics();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Update the list of selected topics</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function updateSelectedTopics() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>selectedTopics = biologyTopics.filter(topic =&gt; topic.selected).map(topic =&gt; topic.id);</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Update select all button text</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const allSelected = biologyTopics.every(topic =&gt; topic.selected);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const noneSelected = biologyTopics.every(topic =&gt; !topic.selected);</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (allSelected) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>selectAllBtn.innerHTML = '&lt;i class="fas fa-times-circle"&gt;&lt;/i&gt; Deselect All';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>selectAllBtn.innerHTML = '&lt;i class="fas fa-check-square"&gt;&lt;/i&gt; Select All';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Enable/disable start quiz button</p>
+<p class="p1"><span class="Apple-converted-space">            </span>startQuizBtn.disabled = selectedTopics.length === 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Update question count display</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function updateQuestionCount() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>questionCount.textContent = numberOfQuestions;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>sliderValue.textContent = numberOfQuestions;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Generate quiz questions based on selected topics</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function generateQuizQuestions() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Filter questions by selected topics</p>
+<p class="p1"><span class="Apple-converted-space">            </span>let availableQuestions = questionsDatabase.filter(q =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const topic = biologyTopics.find(t =&gt; t.name === q.topic);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>return topic &amp;&amp; selectedTopics.includes(topic.id);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Shuffle the questions</p>
+<p class="p1"><span class="Apple-converted-space">            </span>availableQuestions = shuffleArray(availableQuestions);</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Take the requested number of questions</p>
+<p class="p1"><span class="Apple-converted-space">            </span>quizQuestions = availableQuestions.slice(0, Math.min(numberOfQuestions, availableQuestions.length));</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// If not enough questions, use all available</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (quizQuestions.length &lt; numberOfQuestions) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>alert(`Note: Only ${quizQuestions.length} questions available for selected topics.`);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>numberOfQuestions = quizQuestions.length;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>updateQuestionCount();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Initialize user answers array</p>
+<p class="p1"><span class="Apple-converted-space">            </span>userAnswers = new Array(quizQuestions.length).fill(-1);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Shuffle array using Fisher-Yates algorithm</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function shuffleArray(array) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const newArray = [...array];</p>
+<p class="p1"><span class="Apple-converted-space">            </span>for (let i = newArray.length - 1; i &gt; 0; i--) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const j = Math.floor(Math.random() * (i + 1));</p>
+<p class="p1"><span class="Apple-converted-space">                </span>[newArray[i], newArray[j]] = [newArray[j], newArray[i]];</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>return newArray;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Start the quiz</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function startQuiz() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (selectedTopics.length === 0) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>alert('Please select at least one topic.');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>return;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>generateQuizQuestions();</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (quizQuestions.length === 0) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>alert('No questions available for selected topics.');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>return;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Switch to question screen</p>
+<p class="p1"><span class="Apple-converted-space">            </span>welcomeScreen.style.display = 'none';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>resultsScreen.style.display = 'none';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>questionScreen.style.display = 'block';</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Update quiz title</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('quizTitle').textContent = 'Biology Quiz - In Progress';</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Reset quiz state</p>
+<p class="p1"><span class="Apple-converted-space">            </span>currentQuestionIndex = 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>quizStarted = true;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>startTime = new Date();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>timeElapsed = 0;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Start timer</p>
+<p class="p1"><span class="Apple-converted-space">            </span>clearInterval(timerInterval);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>timerInterval = setInterval(updateTimer, 1000);</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Display first question</p>
+<p class="p1"><span class="Apple-converted-space">            </span>displayQuestion(currentQuestionIndex);</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Update navigation buttons</p>
+<p class="p1"><span class="Apple-converted-space">            </span>updateNavigationButtons();</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Update score display</p>
+<p class="p1"><span class="Apple-converted-space">            </span>updateScoreDisplay();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Display a question</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function displayQuestion(index) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (index &lt; 0 || index &gt;= quizQuestions.length) return;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>const question = quizQuestions[index];</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Update question number and total</p>
+<p class="p1"><span class="Apple-converted-space">            </span>currentQuestionNum.textContent = index + 1;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>totalQuestions.textContent = quizQuestions.length;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Update question text</p>
+<p class="p1"><span class="Apple-converted-space">            </span>questionText.textContent = question.text;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>questionTopic.textContent = question.topic;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Update options</p>
+<p class="p1"><span class="Apple-converted-space">            </span>optionsContainer.innerHTML = '';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const optionLetters = ['A', 'B', 'C', 'D'];</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>question.options.forEach((option, i) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const optionElement = document.createElement('div');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>optionElement.className = `option ${userAnswers[index] === i ? 'selected' : ''}`;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>optionElement.innerHTML = `</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="option-letter"&gt;${optionLetters[i]}&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="option-text"&gt;${option}&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>`;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>optionElement.addEventListener('click', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>selectOption(i);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>});</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>optionsContainer.appendChild(optionElement);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Select an option for current question</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function selectOption(optionIndex) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>userAnswers[currentQuestionIndex] = optionIndex;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Update UI to show selected option</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const options = document.querySelectorAll('.option');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>options.forEach((option, i) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>option.classList.toggle('selected', i === optionIndex);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Update navigation buttons</p>
+<p class="p1"><span class="Apple-converted-space">            </span>updateNavigationButtons();</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Update score display</p>
+<p class="p1"><span class="Apple-converted-space">            </span>updateScoreDisplay();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Update navigation buttons state</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function updateNavigationButtons() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Previous button</p>
+<p class="p1"><span class="Apple-converted-space">            </span>prevBtn.style.display = currentQuestionIndex &gt; 0 ? 'inline-flex' : 'none';</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Next/Submit button</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (currentQuestionIndex &lt; quizQuestions.length - 1) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>nextBtn.style.display = 'inline-flex';</p>
+<p class="p1"><span class="Apple-converted-space">                </span>submitBtn.style.display = 'none';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>nextBtn.style.display = 'none';</p>
+<p class="p1"><span class="Apple-converted-space">                </span>submitBtn.style.display = 'inline-flex';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Enable/disable next button based on whether an answer is selected</p>
+<p class="p1"><span class="Apple-converted-space">            </span>nextBtn.disabled = userAnswers[currentQuestionIndex] === -1;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>submitBtn.disabled = userAnswers[currentQuestionIndex] === -1;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Navigate to next question</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function nextQuestion() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (currentQuestionIndex &lt; quizQuestions.length - 1) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>currentQuestionIndex++;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>displayQuestion(currentQuestionIndex);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>updateNavigationButtons();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Navigate to previous question</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function previousQuestion() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (currentQuestionIndex &gt; 0) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>currentQuestionIndex--;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>displayQuestion(currentQuestionIndex);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>updateNavigationButtons();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Submit the quiz</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function submitQuiz() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Stop timer</p>
+<p class="p1"><span class="Apple-converted-space">            </span>clearInterval(timerInterval);</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Calculate score</p>
+<p class="p1"><span class="Apple-converted-space">            </span>let correctCount = 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>quizQuestions.forEach((question, index) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (userAnswers[index] === question.correct) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>correctCount++;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Calculate percentage</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const percentage = Math.round((correctCount / quizQuestions.length) * 100);</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Switch to results screen</p>
+<p class="p1"><span class="Apple-converted-space">            </span>questionScreen.style.display = 'none';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>resultsScreen.style.display = 'block';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('quizTitle').textContent = 'Biology Quiz - Results';</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Update results display</p>
+<p class="p1"><span class="Apple-converted-space">            </span>scorePercent.textContent = `${percentage}%`;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>correctAnswers.textContent = correctCount;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>totalQuizQuestions.textContent = quizQuestions.length;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Format time taken</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const minutes = Math.floor(timeElapsed / 60);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const seconds = timeElapsed % 60;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>timeTaken.textContent = `${minutes}:${seconds &lt; 10 ? '0' : ''}${seconds}`;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Update score circle with animation</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const scoreCircleElement = document.getElementById('scoreCircle');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>scoreCircleElement.style.background = `conic-gradient(var(--primary-green) 0% ${percentage}%, var(--light-green) ${percentage}% 100%)`;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Generate results breakdown</p>
+<p class="p1"><span class="Apple-converted-space">            </span>generateResultsBreakdown(correctCount);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Generate results breakdown</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function generateResultsBreakdown(correctCount) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>breakdownList.innerHTML = '';</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>quizQuestions.forEach((question, index) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const isCorrect = userAnswers[index] === question.correct;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const breakdownItem = document.createElement('div');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>breakdownItem.className = 'breakdown-item';</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>breakdownItem.innerHTML = `</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="breakdown-question"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;strong&gt;Q${index + 1}:&lt;/strong&gt; ${question.text.substring(0, 80)}...</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div style="font-size: 0.85rem; color: #666; margin-top: 5px;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>Topic: ${question.topic} | Year: ${question.year} | Difficulty: ${question.difficulty}</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="breakdown-status ${isCorrect ? 'correct' : 'incorrect'}"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>${isCorrect ? 'Correct' : 'Incorrect'}</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>`;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>breakdownList.appendChild(breakdownItem);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Update timer display</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function updateTimer() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>timeElapsed++;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const minutes = Math.floor(timeElapsed / 60);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const seconds = timeElapsed % 60;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>timerElement.textContent = `Time: ${minutes}:${seconds &lt; 10 ? '0' : ''}${seconds}`;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Update score display</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function updateScoreDisplay() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>let answeredCount = 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>let correctCount = 0;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>for (let i = 0; i &lt;= currentQuestionIndex; i++) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (userAnswers[i] !== -1) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>answeredCount++;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>if (userAnswers[i] === quizQuestions[i].correct) {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>correctCount++;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>scoreDisplay.textContent = `Score: ${correctCount}/${answeredCount}`;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Restart quiz</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function restartQuiz() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Reset UI</p>
+<p class="p1"><span class="Apple-converted-space">            </span>resultsScreen.style.display = 'none';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>welcomeScreen.style.display = 'block';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('quizTitle').textContent = 'Biology Quiz';</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Reset quiz state</p>
+<p class="p1"><span class="Apple-converted-space">            </span>currentQuestionIndex = 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>userAnswers = [];</p>
+<p class="p1"><span class="Apple-converted-space">            </span>quizQuestions = [];</p>
+<p class="p1"><span class="Apple-converted-space">            </span>quizStarted = false;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>timeElapsed = 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>timerElement.textContent = 'Time: 00:00';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>scoreDisplay.textContent = 'Score: 0/0';</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Clear timer</p>
+<p class="p1"><span class="Apple-converted-space">            </span>clearInterval(timerInterval);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Initialize the app</p>
+<p class="p1"><span class="Apple-converted-space">        </span>function init() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Initialize topics</p>
+<p class="p1"><span class="Apple-converted-space">            </span>initializeTopics();</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Set up slider</p>
+<p class="p1"><span class="Apple-converted-space">            </span>questionSlider.addEventListener('input', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>numberOfQuestions = parseInt(questionSlider.value);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>updateQuestionCount();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Set up buttons</p>
+<p class="p1"><span class="Apple-converted-space">            </span>selectAllBtn.addEventListener('click', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const allSelected = biologyTopics.every(topic =&gt; topic.selected);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>biologyTopics.forEach(topic =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>topic.selected = !allSelected;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>});</p>
+<p class="p1"><span class="Apple-converted-space">                </span>initializeTopics();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>clearAllBtn.addEventListener('click', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>biologyTopics.forEach(topic =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>topic.selected = false;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>});</p>
+<p class="p1"><span class="Apple-converted-space">                </span>initializeTopics();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>startQuizBtn.addEventListener('click', startQuiz);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>prevBtn.addEventListener('click', previousQuestion);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>nextBtn.addEventListener('click', nextQuestion);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>submitBtn.addEventListener('click', submitQuiz);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>restartBtn.addEventListener('click', restartQuiz);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>reviewBtn.addEventListener('click', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>// Go back to question screen to review answers</p>
+<p class="p1"><span class="Apple-converted-space">                </span>resultsScreen.style.display = 'none';</p>
+<p class="p1"><span class="Apple-converted-space">                </span>questionScreen.style.display = 'block';</p>
+<p class="p1"><span class="Apple-converted-space">                </span>document.getElementById('quizTitle').textContent = 'Biology Quiz - Review';</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>// Show all answers</p>
+<p class="p1"><span class="Apple-converted-space">                </span>displayQuestion(0);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>updateNavigationButtons();</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>// Disable option selection during review</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const options = document.querySelectorAll('.option');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>options.forEach(option =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>option.style.pointerEvents = 'none';</p>
+<p class="p1"><span class="Apple-converted-space">                </span>});</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>// Change button text</p>
+<p class="p1"><span class="Apple-converted-space">                </span>nextBtn.textContent = 'Review Complete';</p>
+<p class="p1"><span class="Apple-converted-space">                </span>nextBtn.addEventListener('click', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>// Go back to results</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>questionScreen.style.display = 'none';</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>resultsScreen.style.display = 'block';</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}, { once: true });</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Initialize question count display</p>
+<p class="p1"><span class="Apple-converted-space">            </span>updateQuestionCount();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Start the app when page loads</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.addEventListener('DOMContentLoaded', init);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
